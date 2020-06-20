@@ -1,4 +1,4 @@
-package red.felnull.putitem;
+package red.felnull.placeitem;
 
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -7,21 +7,21 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import red.felnull.putitem.proxy.ClientProxy;
-import red.felnull.putitem.proxy.CommonProxy;
+import red.felnull.placeitem.proxy.ClientProxy;
+import red.felnull.placeitem.proxy.CommonProxy;
 
-@Mod(PutItem.MODID)
-public class PutItem {
+@Mod(PlaceItem.MODID)
+public class PlaceItem {
 
 	//	private static final Logger LOGGER = LogManager.getLogger();
 
-	public static final String MODID = "putitem";
+	public static final String MODID = "placeitem";
 
 	@SuppressWarnings("deprecation")
 	public static final CommonProxy proxy = DistExecutor
 			.runForDist(() -> () -> new ClientProxy(), () -> () -> new CommonProxy());
 
-	public PutItem() {
+	public PlaceItem() {
 
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 

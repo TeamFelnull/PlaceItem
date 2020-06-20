@@ -1,4 +1,4 @@
-package red.felnull.putitem.proxy;
+package red.felnull.placeitem.proxy;
 
 import net.minecraft.client.Minecraft;;
 

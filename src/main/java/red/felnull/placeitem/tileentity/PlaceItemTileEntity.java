@@ -1,4 +1,4 @@
-package red.felnull.putitem.tileentity;
+package red.felnull.placeitem.tileentity;
 
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
@@ -6,11 +6,11 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.NonNullList;
 
-public class PutItemTileEntity extends TileEntity {
+public class PlaceItemTileEntity extends TileEntity {
 	protected NonNullList<ItemStack> items = NonNullList.withSize(1, ItemStack.EMPTY);
 
-	public PutItemTileEntity() {
-		super(PITileEntityTypes.PUT_ITEM);
+	public PlaceItemTileEntity() {
+		super(PITileEntityTypes.PLACE_ITEM);
 
 	}
 

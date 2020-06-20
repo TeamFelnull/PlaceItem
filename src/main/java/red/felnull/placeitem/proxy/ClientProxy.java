@@ -1,7 +1,7 @@
-package red.felnull.putitem.proxy;
+package red.felnull.placeitem.proxy;
 
 import net.minecraft.client.Minecraft;
-import red.felnull.putitem.client.renderer.tileentity.PITileEntityRenderers;
+import red.felnull.placeitem.client.renderer.tileentity.PITileEntityRenderers;
 
 public class ClientProxy extends CommonProxy {
 	@Override
