@@ -1,6 +1,6 @@
 {
   "_comment": "Block",
-  "block.putitem.put_item": "Put Item",
+  "block.putitem.placeitem": "Put Item",
 
   "_comment": "Last"
   

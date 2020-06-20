@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "placeitem:block/put_item" }
+    }
+}
