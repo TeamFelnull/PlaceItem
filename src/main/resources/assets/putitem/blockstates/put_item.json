@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "putitem:block/put_item" }
+    }
+}

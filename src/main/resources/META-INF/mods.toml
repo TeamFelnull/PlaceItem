@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[31,)" 
+issueTrackerURL="https://www.servg.red/"
+logoFile="logo.png" 
+[[mods]]
+modId="putitem"
+version="${file.jarVersion}" 
+displayName="Put Item"
+updateJSONURL="https://www.servg.red/" 
+displayURL="https://www.servg.red/" 
+credits="TeamFelNull"
+authors="MORIMORI0317" 
+description="Thank you for downloading!"
