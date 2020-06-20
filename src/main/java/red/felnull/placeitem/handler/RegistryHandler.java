@@ -1,4 +1,4 @@
-package red.felnull.putitem.handler;
+package red.felnull.placeitem.handler;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -7,16 +7,17 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import red.felnull.putitem.PutItem;
-import red.felnull.putitem.block.PIBlocks;
-import red.felnull.putitem.tileentity.PITileEntityTypes;
+import red.felnull.placeitem.PlaceItem;
+import red.felnull.placeitem.block.PIBlocks;
+import red.felnull.placeitem.tileentity.PITileEntityTypes;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RegistryHandler {
 
 	@SubscribeEvent
 	public static void onItemsRegistry(final RegistryEvent.Register<Item> e) {
-		e.getRegistry().register(new BlockItem(PIBlocks.PUT_ITEM, new Item.Properties()).setRegistryName(PutItem.MODID, "put_item"));
+		e.getRegistry().register(new BlockItem(PIBlocks.PLACE_ITEM, new Item.Properties())
+				.setRegistryName(PlaceItem.MODID, "place_item"));
 	}
 
 	@SubscribeEvent

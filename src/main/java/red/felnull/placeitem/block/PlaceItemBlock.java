@@ -1,4 +1,4 @@
-package red.felnull.putitem.block;
+package red.felnull.placeitem.block;
 
 import javax.annotation.Nullable;
 
@@ -13,11 +13,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
-import red.felnull.putitem.tileentity.PutItemTileEntity;
+import red.felnull.placeitem.tileentity.PlaceItemTileEntity;
 
-public class PutItemBlock extends Block {
+public class PlaceItemBlock extends Block {
 
-	public PutItemBlock(Properties properties) {
+	public PlaceItemBlock(Properties properties) {
 		super(properties);
 
 	}
@@ -25,7 +25,7 @@ public class PutItemBlock extends Block {
 	@Nullable
 	@Override
 	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-		return new PutItemTileEntity();
+		return new PlaceItemTileEntity();
 	}
 
 	@Override
@@ -37,11 +37,11 @@ public class PutItemBlock extends Block {
 	public ActionResultType func_225533_a_(BlockState stateIn, World worldIn, BlockPos pos,
 			PlayerEntity player, Hand hand, BlockRayTraceResult brtr) {
 
-		if (!(worldIn.getTileEntity(pos) instanceof PutItemTileEntity))
+		if (!(worldIn.getTileEntity(pos) instanceof PlaceItemTileEntity))
 			return ActionResultType.PASS;
 
 		ItemStack helditem = player.getHeldItem(hand);
-		PutItemTileEntity tile = (PutItemTileEntity) worldIn.getTileEntity(pos);
+		PlaceItemTileEntity tile = (PlaceItemTileEntity) worldIn.getTileEntity(pos);
 
 		if (tile.getItems().get(0).isEmpty()) {
 			ItemStack insertstack = helditem.copy();

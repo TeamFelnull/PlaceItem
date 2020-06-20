@@ -1,4 +1,4 @@
-package red.felnull.putitem.client.renderer.tileentity;
+package red.felnull.placeitem.client.renderer.tileentity;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 
@@ -8,17 +8,17 @@ import net.minecraft.client.renderer.model.ItemCameraTransforms.TransformType;
 import net.minecraft.client.renderer.tileentity.TileEntityRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;
-import red.felnull.putitem.tileentity.PutItemTileEntity;
+import red.felnull.placeitem.tileentity.PlaceItemTileEntity;
 
-public class PutItemTileEntityRenderer extends TileEntityRenderer<PutItemTileEntity> {
+public class PlaceItemTileEntityRenderer extends TileEntityRenderer<PlaceItemTileEntity> {
 
-	public PutItemTileEntityRenderer(TileEntityRendererDispatcher p_i226006_1_) {
+	public PlaceItemTileEntityRenderer(TileEntityRendererDispatcher p_i226006_1_) {
 		super(p_i226006_1_);
 
 	}
 
 	@Override
-	public void func_225616_a_(PutItemTileEntity tile, float partialTicks, MatrixStack matrix, IRenderTypeBuffer buff,
+	public void func_225616_a_(PlaceItemTileEntity tile, float partialTicks, MatrixStack matrix, IRenderTypeBuffer buff,
 			int light, int overlay) {
 
 		ItemStack putingstack = tile.getItems().get(0);
